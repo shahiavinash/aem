@@ -1,0 +1,8 @@
+<section data-sly-use.test1="com.myaem.core.models.MyTestingModel">
+    <p>First Name is ${test1.firstname} Last Name is ${test1.last}</p>
+    <p>Address is ${test1.add}</p>
+    <p>Last name is ${test1.lastname}</p>
+    <p>${test1.message}</p>
+    <p>${test1.message2}</p>
+    <p data-sly-list="${test1.tags}">${item}</p>
+</section>

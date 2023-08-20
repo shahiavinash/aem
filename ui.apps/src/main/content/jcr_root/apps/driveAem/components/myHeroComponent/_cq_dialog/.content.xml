@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Hero"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <imageurl
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Please Browser url for the Image"
+                        fieldLabel="Image Url"
+                        name="./imageUrl"
+                        rootPath="/content/dam"/>
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Please Enter title"
+                        fieldLabel="Title"
+                        name="./title"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldDescription="Please Enter Description"
+                        fieldLabel="Description"
+                        name="./description"/>
+                    <buttonlink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldDescription="Please Browser url for the Image"
+                        fieldLabel="Button Url"
+                        name="./buttonLink"
+                        rootPath="/content/"/>
+                    <buttontext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Please Enter Button Text"
+                        fieldLabel="Button Text"
+                        name="./buttonText"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

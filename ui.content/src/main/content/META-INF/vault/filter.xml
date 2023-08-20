@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/driveAem" mode="merge"/>
+    <filter root="/content/driveAem" mode="merge"/>
+    <filter root="/content/dam/driveAem" mode="merge">
+        <exclude pattern="/content/dam/driveAem(/.*)?"/>
+        <include pattern="/content/dam/driveAem/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/driveAem/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/driveAem" mode="merge"/>
+</workspaceFilter>
